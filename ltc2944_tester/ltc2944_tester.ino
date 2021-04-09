@@ -1,4 +1,5 @@
 #include <Wire.h>
+#include "LTC2944.h"
 
 void setup() {
   

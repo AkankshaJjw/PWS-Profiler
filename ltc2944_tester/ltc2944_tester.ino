@@ -3,8 +3,8 @@
 
 void setup() {
   
-  Wire.setSpeed(CLOCK_SPEED_100KHZ);
-  Wire.stretchClock(true);
+//  Wire.setSpeed(CLOCK_SPEED_100KHZ);
+//  Wire.stretchClock(true);
   Wire.begin();
   LTC2944_mode = LTC2944_AUTOMATIC_MODE | prescalar_mode | alcc_mode ;
   ack |= LTC2944_write(LTC2944_I2C_ADDRESS, LTC2944_CONTROL_REG, LTC2944_mode);

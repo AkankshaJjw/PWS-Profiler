@@ -51,7 +51,7 @@ void loop() {
   Serial.println(transmitStatus);
 
   
-  byte receiveStatus = Wire.requestFrom(addressLTC, 1);
+  byte receiveStatus = Wire.requestFrom(addressLTC, 1, false);
   //while(Wire.available() == 0);
   Serial.print("Bytes Received: ");
   Serial.println(receiveStatus);
